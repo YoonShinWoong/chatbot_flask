@@ -121,9 +121,9 @@ def category1_recommend_function(category, rain_dummy):
     rows = cs.fetchall()
     
     # 하나 가져오기
-    for row in rows:
-        print(row)
-        
+#     for row in rows:
+#         print(row)
+    row = rows[0]  
     # 이차 카테고리가 있으면
     if row[2] != "없음":
         menu = row[0] + "(" + row[1] + ">" + row[2] + ")" 
@@ -145,9 +145,9 @@ def category2_recommend_function(category, rain_dummy):
     rows = cs.fetchall()
     
     # 하나 가져오기
-    for row in rows:
-        print(row)
-        
+#     for row in rows:
+#         print(row)
+    row = rows[0]
     # 이차 카테고리가 있으면
     if row[2] != "없음":
         menu = row[0] + "(" + row[1] + ">" + row[2] + ")" 
